@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -14,7 +16,9 @@ export default function Home() {
         </div>
         <div className={styles.ctas}>
           <button className={styles.cta}>Explore</button>
-          <button className={styles.cta}>Login</button>
+          <button className={styles.cta}>
+            <Link href="/login">Login</Link>
+          </button>
         </div>
       </div>
     </div>
