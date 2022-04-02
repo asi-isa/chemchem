@@ -66,7 +66,7 @@ export default function Login() {
       </div>
 
       <p className={styles.text}>
-        Don't have an account? <Link href="/signup">Signup</Link>
+        Don&apos;t have an account? <Link href="/signup">Signup</Link>
       </p>
     </div>
   );
