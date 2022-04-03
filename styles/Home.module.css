@@ -91,9 +91,9 @@
   position: relative;
 }
 
-.cta:nth-child(1) {
+/* .cta:nth-child(1) {
   font-size: 1.8rem;
-}
+} */
 
 .cta:nth-child(2) {
   border: 2px solid #000;

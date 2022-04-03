@@ -1,12 +1,18 @@
 .con {
   min-height: 100vh;
   background-color: #fbf8f1;
+  /* background-image: url("../public/wave_extended.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  padding: 0 2rem;
 }
 
 .title {
-  font-size: 1.8rem;
+  font-size: 2.8rem;
   font-weight: 600;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0;
+  margin-bottom: 2rem;
 }
 
 .underline {
@@ -14,4 +20,47 @@
   height: 2px;
   background-color: #000;
   margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 5rem;
+}
+
+.header_title {
+  font-weight: 600;
+  line-height: 1.42;
+}
+
+/* .offers {} */
+
+.offers_title {
+  margin-bottom: 3rem;
+  border: 2px solid #000;
+  width: fit-content;
+  padding: 1rem 0.4rem;
+  padding-right: 3rem;
+  border-top-right-radius: 2rem;
+}
+
+.offer {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.33);
+  backdrop-filter: blur(0.42rem);
+  border-radius: 0.33rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 2rem;
+}
+
+.offer:last-child {
+  margin-bottom: 0;
+}
+
+.offer_title {
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+}
+
+.offer_text {
+  font-size: 1.2rem;
+  line-height: 1.42;
 }

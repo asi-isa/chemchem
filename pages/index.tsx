@@ -32,6 +32,7 @@ export default function Home() {
               width: "fit-content",
               height: "fit-content",
               position: "absolute",
+              fontSize: "2rem",
             }}
             animate={
               explore && {
@@ -42,6 +43,7 @@ export default function Home() {
                 left: 0,
                 marginLeft: 0,
                 backgroundColor: "#FBF8F1",
+                fontSize: "2.8rem",
                 zIndex: 9,
               }
             }
@@ -49,7 +51,7 @@ export default function Home() {
             className={styles.cta}
             onClick={() => {
               setExplore(true);
-              setTimeout(() => router.push("/explore"), 1500);
+              setTimeout(() => router.push("/explore"), 1600);
             }}
           >
             Explore
