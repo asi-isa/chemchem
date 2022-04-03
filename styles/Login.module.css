@@ -7,14 +7,38 @@
   width: 100vw;
   height: 100vh;
   padding: 1rem;
-
+}
+.inner_con_con {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 700px) {
+  .inner_con_con {
+    border: 2px solid #000;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 700px;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 10vh;
+    background: rgba(255, 255, 255, 0.33);
+    backdrop-filter: blur(0.33rem);
+  }
+
+  @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .inner_con_con {
+      background: rgba(255, 255, 255, 0.8);
+    }
+  }
 }
 
 .header {
   display: flex;
+  margin-bottom: 10vh;
 }
 
 .title {
@@ -22,9 +46,11 @@
 }
 
 .auths_con {
+  margin-bottom: 10vh;
 }
 
 .text {
+  margin-bottom: 0.5rem;
 }
 
 .auths {
@@ -32,27 +58,60 @@
   flex-wrap: wrap;
 }
 
+@media (min-width: 700px) {
+  .auths {
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
+
 .auth {
   width: 46%;
   border: 2px solid #000;
-  margin: 2%;
+  /* margin: 2%; */
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.42rem 0;
   border-radius: 0.33rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.auth:hover,
+.auth:active,
+.auth:focus {
+  transform: scale(0.98);
 }
 
-.email_con {
+.auth:nth-child(1) {
+  margin-right: 2%;
+  margin-bottom: 2%;
 }
+.auth:nth-child(2) {
+  margin-bottom: 2%;
+}
+.auth:nth-child(3) {
+  margin-right: 2%;
+}
+
+/* .email_con {
+} */
 
 .form {
   display: flex;
   flex-direction: column;
 }
+
+@media (min-width: 700px) {
+  .form {
+    margin: 0 1rem;
+    margin-top: 2rem;
+  }
+}
 .input {
   border: none;
   background: none;
+  outline: none;
   font-size: 1.4rem;
   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 }
@@ -68,4 +127,18 @@
   background: none;
   font-size: 1.4rem;
   font-weight: 600;
+  margin-top: 2rem;
+  padding: 0.42rem 0;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  transform: scale(0.98);
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
