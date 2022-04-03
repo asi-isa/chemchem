@@ -112,6 +112,7 @@
 .cta:nth-child(2) {
   border: 2px solid #000;
   border-radius: 0.33rem;
+  margin-left: auto;
 }
 
 .cta:nth-child(1):hover {
