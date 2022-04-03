@@ -1,10 +1,13 @@
 import { useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const router = useRouter();
+
   const [explore, setExplore] = useState(false);
 
   return (
@@ -42,9 +45,12 @@ export default function Home() {
                 zIndex: 9,
               }
             }
-            transition={{ duration: 2 }}
+            transition={{ duration: 1.6 }}
             className={styles.cta}
-            onClick={() => setExplore(true)}
+            onClick={() => {
+              setExplore(true);
+              setTimeout(() => router.push("/explore"), 1500);
+            }}
           >
             Explore
             <motion.div
