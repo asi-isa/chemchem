@@ -9,22 +9,12 @@ export default function Home() {
 
   return (
     <div className={styles.con}>
-      {/* <motion.div
-        initial={{
-          width: "0vh",
-          height: "0vh",
-          borderRadius: "300vh",
-          backgroundColor: "#FBF8F1",
-          position: "fixed",
-          left: "50%",
-          right: "50%",
-          top: "50%",
-        }}
-        animate={{ width: "200vh", height: "200vh" }}
-        transition={{ duration: 2 }}
-        className={styles.transition_filler}
-      /> */}
-      <div className={styles.inner_con}>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.999 }}
+        transition={{ duration: 0.8 }}
+        className={styles.inner_con}
+      >
         <div className={styles.header}>
           <h1 className={styles.title}>Discover the Modern Way of Learning</h1>
           <div className={styles.features}>
@@ -57,12 +47,22 @@ export default function Home() {
             onClick={() => setExplore(true)}
           >
             Explore
+            <motion.div
+              initial={{
+                width: "1%",
+                height: "2px",
+                backgroundColor: "#000",
+                margin: "0 auto",
+              }}
+              animate={{ width: "100%" }}
+              transition={{ delay: 0.8, duration: 0.8 }}
+            />
           </motion.div>
           <button className={styles.cta}>
             <Link href="/login">Login</Link>
           </button>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

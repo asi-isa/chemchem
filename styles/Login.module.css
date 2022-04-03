@@ -56,17 +56,17 @@
 .auths {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media (min-width: 700px) {
   .auths {
-    justify-content: center;
     margin-top: 2rem;
   }
 }
 
 .auth {
-  width: 46%;
+  width: 49%;
   border: 2px solid #000;
   /* margin: 2%; */
   display: flex;
@@ -104,7 +104,7 @@
 
 @media (min-width: 700px) {
   .form {
-    margin: 0 1rem;
+    margin: 0 0.33rem;
     margin-top: 2rem;
   }
 }
@@ -119,6 +119,10 @@
 .input:hover,
 .input:focus {
   border-bottom-color: rgba(0, 0, 0, 1);
+}
+
+.input:nth-child(1) {
+  margin-bottom: 1rem;
 }
 
 .btn {
