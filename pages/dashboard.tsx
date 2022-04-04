@@ -34,7 +34,7 @@ export default function Dashboard() {
           </div>
 
           <div className={styles.avatar_con}>
-            <Image src="/avatar_21.jpg" layout="fill" quality={10} />
+            <Image src="/avatar_21.jpg" layout="fill" quality={7} />
           </div>
         </div>
 

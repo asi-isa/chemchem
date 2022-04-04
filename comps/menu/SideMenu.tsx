@@ -21,6 +21,7 @@ interface SideMenuProps {
 export default function SideMenu({ showSideMenu }: SideMenuProps) {
   return (
     <motion.div
+      initial={{ width: "0vw" }}
       animate={{
         width: showSideMenu ? "33vw" : "0vw",
         paddingRight: showSideMenu ? "1rem" : "0rem",
