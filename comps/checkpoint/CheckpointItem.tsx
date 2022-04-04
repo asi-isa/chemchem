@@ -19,6 +19,9 @@ export default function CheckpointItem({
 }: CheckpointItemProps) {
   return (
     <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 0.999 }}
+      transition={{ duration: 1 }}
       className={styles.checkpoint_item}
       style={{ backgroundColor: color }}
     >
