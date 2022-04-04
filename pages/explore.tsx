@@ -1,8 +1,9 @@
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { FaAward } from "react-icons/fa";
 
 import styles from "../styles/Explore.module.css";
+import Arrow from "../comps/arrow/Arrow";
 
 export default function Explore() {
   return (
@@ -63,6 +64,13 @@ export default function Explore() {
               We put a tremendous effort to guarantee you a delightful user
               experience and give you the best possible learning opportunity.
             </p>
+          </div>
+        </div>
+
+        <div className={styles.cta_con}>
+          <Arrow />
+          <div className={styles.cta}>
+            <Link href="/signup">Signup</Link>
           </div>
         </div>
       </motion.div>

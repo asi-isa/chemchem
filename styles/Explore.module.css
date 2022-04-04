@@ -26,6 +26,10 @@
   margin-bottom: 5rem;
 }
 
+.inner_con {
+  max-width: 1800px;
+}
+
 .header_title {
   font-weight: 600;
   line-height: 1.42;
@@ -63,4 +67,32 @@
 .offer_text {
   font-size: 1.2rem;
   line-height: 1.42;
+}
+
+.cta_con {
+  padding: 8vh 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cta {
+  background-color: #000;
+  color: #fbf8f1;
+  font-size: 1.33rem;
+  font-weight: 600;
+  width: fit-content;
+  padding: 0.6rem 1.42rem;
+  border-radius: 0.33rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-left: 1rem;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.cta:active,
+.cta:hover,
+.cta:focus {
+  background-color: #fbf8f1;
+  color: #000;
 }
