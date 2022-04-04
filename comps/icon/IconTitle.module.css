@@ -1,0 +1,27 @@
+.icon_con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.icon_text {
+  margin-top: 0.42rem;
+}
+
+.hover_dot {
+  height: 0px;
+  width: 0px;
+  /* padding-top: 6px; */
+  border-radius: 6px;
+  background: white;
+  transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+}
+
+.hover_dot_active {
+  padding-top: 6px;
+  height: 6px;
+  width: 6px;
+  border-radius: 6px;
+}
