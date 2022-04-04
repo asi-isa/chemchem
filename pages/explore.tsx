@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import styles from "../styles/Explore.module.css";
 import Arrow from "../comps/arrow/Arrow";
+import Offer from "../comps/offer/Offer";
 
 export default function Explore() {
   return (
@@ -29,42 +30,30 @@ export default function Explore() {
         <div className={styles.offers}>
           <h1 className={styles.offers_title}>Our Offer</h1>
 
-          <div className={styles.offer}>
-            <h2 className={styles.offer_title}>Extraordinary Quality</h2>
+          <Offer
+            title="Extraordinary Quality"
+            text="Our learning content is constantly reviewed by university
+              professors."
+          />
 
-            <p className={styles.offer_text}>
-              Our learning content is constantly reviewed by university
-              professors.
-            </p>
-          </div>
+          <Offer
+            title="University Ready"
+            text="After completing our courses you will have all the necessary
+            knowledge for a successful study start."
+          />
 
-          <div className={styles.offer}>
-            <h2 className={styles.offer_title}>University Ready</h2>
+          <Offer
+            title="Highly Interactive"
+            text="The more you engage with something, the more likely you will
+            retain it. So all our courses are designed with that claim in
+            mind."
+          />
 
-            <p className={styles.offer_text}>
-              After completing our courses you will have all the necessary
-              knowledge for a successful study start.
-            </p>
-          </div>
-
-          <div className={styles.offer}>
-            <h2 className={styles.offer_title}>Highly Interactive</h2>
-
-            <p className={styles.offer_text}>
-              The more you engage with something, the more likely you will
-              retain it. So all our courses are designed with that claim in
-              mind.
-            </p>
-          </div>
-
-          <div className={styles.offer}>
-            <h2 className={styles.offer_title}>Constantly Evolving</h2>
-
-            <p className={styles.offer_text}>
-              We put a tremendous effort to guarantee you a delightful user
-              experience and give you the best possible learning opportunity.
-            </p>
-          </div>
+          <Offer
+            title="Constantly Evolving"
+            text="We put a tremendous effort to guarantee you a delightful user
+            experience and give you the best possible learning opportunity."
+          />
         </div>
 
         <div className={styles.cta_con}>

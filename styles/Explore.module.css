@@ -46,31 +46,8 @@
   border-top-right-radius: 2rem;
 }
 
-.offer {
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.33);
-  backdrop-filter: blur(0.42rem);
-  border-radius: 0.33rem;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  margin-bottom: 2rem;
-}
-
-.offer:last-child {
-  margin-bottom: 0;
-}
-
-.offer_title {
-  margin-bottom: 1rem;
-  font-size: 1.7rem;
-}
-
-.offer_text {
-  font-size: 1.2rem;
-  line-height: 1.42;
-}
-
 .cta_con {
-  padding: 8vh 0;
+  padding: 10vh 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
