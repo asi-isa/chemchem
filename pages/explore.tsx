@@ -28,7 +28,20 @@ export default function Explore() {
         </div>
 
         <div className={styles.offers}>
-          <h1 className={styles.offers_title}>Our Offer</h1>
+          <h1 className={styles.offers_title}>
+            {"Our Offer".split("").map((char, index) => {
+              return (
+                <motion.span
+                  initial={{ opacity: 0, y: 50 }}
+                  animate={{ opacity: 0.999, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  key={`${char}-${index}`}
+                >
+                  {char}
+                </motion.span>
+              );
+            })}
+          </h1>
 
           <Offer
             title="Extraordinary Quality"
