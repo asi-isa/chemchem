@@ -11,7 +11,12 @@ export default function Dashboard() {
       <SideMenu showSideMenu={showSideMenu} />
 
       <div className={styles.main}>
-        <h1 className={styles.title}></h1>
+        <h1
+          className={styles.title}
+          onClick={() => setShowSideMenu(!showSideMenu)}
+        >
+          Hello, isa!
+        </h1>
       </div>
     </div>
   );

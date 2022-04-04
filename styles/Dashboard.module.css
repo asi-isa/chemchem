@@ -3,13 +3,22 @@
   background-color: #170600;
   display: flex;
   overflow: hidden;
+  padding: 0.33rem;
+  padding-left: 0;
 }
 
 .main {
   overflow: hidden;
   width: 100vw;
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  /* border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem; */
+  border-radius: 1rem;
   background-color: #fbf8f1;
-  word-break: keep-all;
+  /* word-break: keep-all; */
+  position: relative;
+}
+
+.title {
+  color: #170600;
+  text-align: right;
 }
