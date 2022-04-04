@@ -1,0 +1,14 @@
+.badge {
+  position: absolute;
+  top: 12vh;
+  background: #170600;
+  padding: 0.4rem;
+  border-top-right-radius: 0.42rem;
+  border-bottom-right-radius: 0.42rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}

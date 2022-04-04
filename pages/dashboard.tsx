@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import Image from "next/image";
+import { IoLeafOutline } from "react-icons/io5";
 
 import styles from "../styles/Dashboard.module.css";
 import SideMenu from "../comps/menu/SideMenu";
-import { IoAppsOutline, IoApps, IoLeafOutline } from "react-icons/io5";
-import Image from "next/image";
 import CircleSVG from "../comps/svg/CircleSVG";
+import Badge from "../comps/badge/Badge";
 
 export default function Dashboard() {
   const [showSideMenu, setShowSideMenu] = useState(false);
@@ -14,17 +15,9 @@ export default function Dashboard() {
       <SideMenu showSideMenu={showSideMenu} />
 
       <div className={styles.main}>
-        <div
-          className={styles.badge}
-          onClick={() => setShowSideMenu(!showSideMenu)}
-        >
-          {!showSideMenu ? (
-            <IoApps size={28} color="#fbf8f1" />
-          ) : (
-            <IoAppsOutline size={28} color="#fbf8f1" />
-          )}
-        </div>
+        <Badge setShowSideMenu={setShowSideMenu} showSideMenu={showSideMenu} />
 
+        {/* header */}
         <div className={styles.header}>
           <div className={styles.firma_con_con}>
             <div className={styles.firma_con}>
@@ -43,6 +36,8 @@ export default function Dashboard() {
             <Image src="/avatar_21.jpg" layout="fill" quality={10} />
           </div>
         </div>
+
+        {/*  */}
       </div>
     </div>
   );
