@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import { IoChevronForward, IoLeafOutline } from "react-icons/io5";
+import { IoLeafOutline } from "react-icons/io5";
 
 import styles from "../styles/Dashboard.module.css";
 import SideMenu from "../comps/menu/SideMenu";
 import CircleSVG from "../comps/svg/CircleSVG";
 import Badge from "../comps/badge/Badge";
+import CheckpointItem from "../comps/checkpoint/CheckpointItem";
 
 export default function Dashboard() {
   const [showSideMenu, setShowSideMenu] = useState(false);
@@ -42,41 +43,24 @@ export default function Dashboard() {
         <div className={styles.checkpoint_con}>
           <h3 className={styles.checkpoint_title}>Where you left off</h3>
 
-          <div
-            className={styles.checkpoint_item}
-            style={{ backgroundColor: "#cee5d0" }}
-          >
-            <div className="">
-              <p className={styles.checkpoint_item_title}>Biology</p>
-              <p className={styles.checkpoint_text}>Lecture 1 / Chapter 3</p>
-            </div>
-
-            <IoChevronForward size={33} />
-          </div>
-
-          <div
-            className={styles.checkpoint_item}
-            style={{ backgroundColor: "#FEF7DC" }}
-          >
-            <div className="">
-              <p className={styles.checkpoint_item_title}>Chemistry</p>
-              <p className={styles.checkpoint_text}>Lecture 4 / Chapter 2</p>
-            </div>
-
-            <IoChevronForward size={33} />
-          </div>
-
-          <div
-            className={styles.checkpoint_item}
-            style={{ backgroundColor: "#B7CADB" }}
-          >
-            <div className="">
-              <p className={styles.checkpoint_item_title}>Chemistry</p>
-              <p className={styles.checkpoint_text}>Lecture 4 / Chapter 2</p>
-            </div>
-
-            <IoChevronForward size={33} />
-          </div>
+          <CheckpointItem
+            title="Biology"
+            chapter={1}
+            lecture={1}
+            color="#cee5d0"
+          />
+          <CheckpointItem
+            title="Chemistry"
+            chapter={3}
+            lecture={3}
+            color="#FEF7DC"
+          />
+          <CheckpointItem
+            title="Math"
+            chapter={2}
+            lecture={1}
+            color="#B7CADB"
+          />
         </div>
       </div>
     </div>
