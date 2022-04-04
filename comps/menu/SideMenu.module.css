@@ -4,6 +4,7 @@
   justify-content: space-between;
   color: #fbf8f1;
   padding: 3rem 0;
+  max-width: 150px;
 }
 
 .firma {

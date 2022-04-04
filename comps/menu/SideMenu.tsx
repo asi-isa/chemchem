@@ -27,6 +27,7 @@ export default function SideMenu({ showSideMenu }: SideMenuProps) {
       }}
       transition={{
         duration: 0.8,
+        type: "spring",
       }}
       className={styles.side_menu}
     >
