@@ -8,6 +8,8 @@
   border-radius: 0.42rem;
   margin-bottom: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .checkpoint_item_title {
