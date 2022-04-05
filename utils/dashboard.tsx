@@ -1,3 +1,4 @@
+import Courses from "../comps/dashboard/Courses";
 import Main from "../comps/dashboard/Main";
 
 export type DashboardItem =
@@ -11,7 +12,7 @@ export type DashboardItem =
 
 export function getCurrentDashboardItem(item: DashboardItem) {
   if (item === "Main") return <Main />;
-  if (item === "Courses") return <div>Courses</div>;
+  if (item === "Courses") return <Courses />;
   if (item === "Schedule") return <div>Schedule</div>;
   if (item === "Materials") return <div>Materials</div>;
   if (item === "Certificats") return <div>Certificats</div>;
