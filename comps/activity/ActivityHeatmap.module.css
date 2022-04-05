@@ -28,3 +28,9 @@
 .day {
   background-color: rgba(180, 251, 222, 0.1);
 }
+
+.day:hover,
+.day:focus,
+.day:active {
+  transform: scale(1.1);
+}
