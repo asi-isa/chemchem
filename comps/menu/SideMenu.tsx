@@ -29,7 +29,7 @@ export default function SideMenu({ showSideMenu }: SideMenuProps) {
       }}
       transition={{
         duration: 0.8,
-        ease: "easeInOut",
+        ease: "easeOut",
       }}
       className={styles.side_menu}
     >
