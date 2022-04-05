@@ -1,5 +1,5 @@
 import React, { Dispatch, SetStateAction } from "react";
-import { IoAppsOutline, IoApps, IoLeafOutline } from "react-icons/io5";
+import { IoAppsOutline, IoApps } from "react-icons/io5";
 
 import styles from "./Badge.module.css";
 

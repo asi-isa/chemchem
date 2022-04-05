@@ -26,7 +26,7 @@
   justify-content: space-around;
   align-items: center;
   padding-top: 2vh;
-  margin-bottom: 10vh;
+  margin-bottom: 8vh;
 }
 .firma_con_con {
   display: flex;
@@ -72,6 +72,6 @@
 }
 
 .checkpoint_title {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   font-size: 1.5rem;
 }
