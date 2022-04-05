@@ -26,7 +26,7 @@
   justify-content: space-around;
   align-items: center;
   padding-top: 2vh;
-  margin-bottom: 12vh;
+  margin-bottom: 10vh;
 }
 .firma_con_con {
   display: flex;
@@ -68,7 +68,7 @@
 
 .checkpoint_con {
   padding: 0 1rem;
-  color: rgb(23, 6, 0);
+  color: #170600;
 }
 
 .checkpoint_title {

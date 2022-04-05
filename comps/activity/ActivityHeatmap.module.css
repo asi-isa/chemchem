@@ -1,0 +1,30 @@
+.con {
+  padding: 0 1rem;
+  margin-bottom: 4vh;
+}
+
+.title {
+  color: #170600;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.heatmap_con {
+  border: 1px solid green;
+  background-color: #28272c;
+  padding: 1rem;
+  border-radius: 0.42rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.offset,
+.day {
+  width: 12.285%;
+  aspect-ratio: 1;
+  margin: 1%;
+  border-radius: 0.33rem;
+}
+.day {
+  background-color: rgba(180, 251, 222, 0.1);
+}

@@ -7,6 +7,7 @@ import SideMenu from "../comps/menu/SideMenu";
 import CircleSVG from "../comps/svg/CircleSVG";
 import Badge from "../comps/badge/Badge";
 import CheckpointItem from "../comps/checkpoint/CheckpointItem";
+import ActivityHeatmap from "../comps/activity/ActivityHeatmap";
 
 export default function Dashboard() {
   const [showSideMenu, setShowSideMenu] = useState(false);
@@ -38,10 +39,14 @@ export default function Dashboard() {
           </div>
         </div>
 
+        {/* Activity */}
+
+        <ActivityHeatmap />
+
         {/* checkpoint */}
 
         <div className={styles.checkpoint_con}>
-          <h3 className={styles.checkpoint_title}>Where you left off</h3>
+          <h3 className={styles.checkpoint_title}>Checkpoints</h3>
 
           <CheckpointItem
             title="Biology"
