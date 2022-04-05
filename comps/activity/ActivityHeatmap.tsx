@@ -5,7 +5,7 @@ import styles from "./ActivityHeatmap.module.css";
 
 const today = new Date();
 const daysInMonth = getDaysInMonth(today);
-const offset = startOfMonth(today).getDay();
+const offset = startOfMonth(today).getDay() + 1;
 
 export default function ActivityHeatmap() {
   return (
