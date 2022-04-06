@@ -33,10 +33,15 @@
 }
 
 .title {
-  font-size: 3.3rem;
+  font-size: 3rem;
   font-weight: 800;
 }
 
+@media (min-width: 400px) {
+  .title {
+    font-size: 3.3rem;
+  }
+}
 @media (min-width: 450px) {
   .title {
     font-size: 3.6rem;
