@@ -4,7 +4,7 @@
 }
 
 .title {
-  color: #170600;
+  color: var(--dark);
   margin-bottom: 1.2rem;
   font-size: 1.5rem;
 }

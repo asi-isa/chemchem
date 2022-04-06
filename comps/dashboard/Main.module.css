@@ -1,5 +1,5 @@
 .title {
-  color: #170600;
+  color: var(--dark);
 }
 
 .header {
@@ -31,7 +31,7 @@
   justify-content: center;
   align-items: center;
   background: #eebc73;
-  color: #fbf8f1;
+  color: var(--cream);
   font-weight: 600;
   font-size: 1.1rem;
 }
@@ -49,7 +49,7 @@
 
 .checkpoint_con {
   padding: 0 1rem;
-  color: #170600;
+  color: var(--dark);
 }
 
 .checkpoint_title {

@@ -1,18 +1,18 @@
 .con {
-  min-height: 100vh;
-  background-color: #170600;
+  height: 100vh;
+  background-color: var(--dark);
   display: flex;
-  overflow: hidden;
+  overflow-x: hidden;
   padding: 0.33rem;
   padding-left: 0;
 }
 
 .main {
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100vw;
   border-top-left-radius: 1rem;
   border-bottom-left-radius: 1rem;
-  background-color: #fbf8f1;
+  background-color: var(--cream);
   position: relative;
   flex-shrink: 0;
 }

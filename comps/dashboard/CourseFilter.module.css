@@ -1,5 +1,6 @@
 .filter_con {
   margin-bottom: 5vh;
+  padding: 0 1rem;
 }
 
 .filter_first_row_con {
@@ -16,8 +17,8 @@
 .filter_second_row_con {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 2vh 0;
+  justify-content: center;
+  margin-bottom: 8vh;
   padding: 0.33vh 0;
 }
 
@@ -29,7 +30,7 @@
   border-radius: 0.33rem;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 0.42rem 1rem;
-  margin: 0.5rem 0;
+  margin: 0.5rem 0.21rem;
   cursor: pointer;
 }
 .filter_second_row_text {

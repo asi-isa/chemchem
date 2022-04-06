@@ -9,7 +9,7 @@ export default function Dashboard() {
   const [showSideMenu, setShowSideMenu] = useState(false);
 
   const [currentDashboardItem, setCurrentDashboardItem] =
-    useState<DashboardItem>("Main");
+    useState<DashboardItem>("Courses");
 
   return (
     <div className={styles.con}>
