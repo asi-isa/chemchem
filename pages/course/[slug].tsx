@@ -11,6 +11,7 @@ import CourseFilter from "../../comps/dashboard/CourseFilter";
 import CourseVideoItem from "../../comps/dashboard/course/CourseVideoItem";
 import CourseArticle from "../../comps/dashboard/course/item/CourseArticle";
 import CourseQuiz from "../../comps/dashboard/course/item/CourseQuiz";
+import CourseTest from "../../comps/dashboard/course/item/CourseTest";
 
 const COURSE_ITEM_DATA = ["just", "some", "dummy", "data"];
 
@@ -46,7 +47,13 @@ export default function CourseList() {
 
         <CourseQuiz />
 
-        <div className={styles.course_item_test}></div>
+        <CourseVideoItem />
+
+        <CourseArticle />
+
+        <CourseQuiz />
+
+        <CourseTest />
       </div>
     </div>
   );
