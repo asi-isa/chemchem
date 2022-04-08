@@ -1,0 +1,18 @@
+.con {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.check_box {
+  flex-shrink: 0;
+  width: 1.42rem;
+  aspect-ratio: 1;
+  border-radius: 0.21rem;
+  border: 1px solid var(--dark-33);
+  margin-right: 1rem;
+  transition: background-color 1s;
+}
+.check_box_active {
+  background-color: var(--dark);
+}

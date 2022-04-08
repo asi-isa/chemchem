@@ -21,10 +21,30 @@
 }
 
 .title {
+  margin-bottom: 2rem;
+}
+
+.quiz_con {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 1rem;
 }
-.description {
+
+.check {
+  border: 1px solid var(--dark);
+  width: fit-content;
+  padding: 0.7rem 1.21rem;
+  border-radius: 0.33rem;
+  margin-left: auto;
+  cursor: pointer;
   font-size: 1.1rem;
-  line-height: 1.42;
-  margin-bottom: 0.5rem;
+  font-weight: 600;
+  transition: background-color 0.42s, box-shadow 0.42s;
+}
+.check:hover,
+.check:focus,
+.check:active {
+  background-color: var(--dark);
+  color: var(--cream);
+  box-shadow: var(--dark) 0px 5px 15px;
 }
