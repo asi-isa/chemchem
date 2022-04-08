@@ -1,23 +1,22 @@
 import React from "react";
+import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import { IoChevronForward } from "react-icons/io5";
 
 import styles from "./CourseItem.module.css";
-import Link from "next/link";
 import slugify from "../../../utils/str/slugify";
-import { useRouter } from "next/router";
 
 interface CourseItemProps {
   title: string;
   text: string;
-  xp: number;
+  percent: number;
   index: number;
 }
 
 export default function CourseItem({
   title,
   text,
-  xp,
+  percent,
   index,
 }: CourseItemProps) {
   const router = useRouter();
@@ -42,7 +41,7 @@ export default function CourseItem({
       />
 
       <div className={styles.exp_link_con}>
-        <p className={styles.exp}>{xp} XP</p>
+        <p className={styles.exp}>{percent}%</p>
 
         <IoChevronForward size={25} />
       </div>

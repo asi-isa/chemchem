@@ -1,0 +1,47 @@
+.course_item_video {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.33rem;
+  border: 1px solid var(--dark-33);
+  border-top-right-radius: 3.3rem;
+  background-color: rgba(255, 255, 255, 0.33);
+  backdrop-filter: blur(0.42rem);
+  cursor: pointer;
+  overflow: hidden;
+  /* opacity: 0.42; */
+}
+
+.img_con {
+  height: 30vh;
+  position: relative;
+}
+
+.video_body {
+  padding: 1rem 0.5rem;
+}
+.video_title {
+  margin-bottom: 1rem;
+}
+.video_description {
+  line-height: 1.42;
+  font-size: 1.1rem;
+}
+.video_divider {
+  height: 2px;
+  background-color: var(--dark-33);
+  margin: 1.42rem auto;
+}
+
+.video_footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1rem;
+  margin-bottom: 0.5rem;
+}
+.minute_con {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

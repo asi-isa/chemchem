@@ -9,17 +9,17 @@ const COURSE_DATA = [
   {
     title: "Biology I",
     text: `How are cells structured? Where does oxygen come from? Why do we need to breathe? What is the secret of life? Learn the most important fundamentals.`,
-    xp: 400,
+    percent: 33,
   },
   {
     title: "Biology II",
     text: `How does inheritance work? What are genes? Take your knowledge to the next level.`,
-    xp: 800,
+    percent: 0,
   },
   {
     title: "Biology III",
     text: `What are mRNA vaccines? How is insulin produced? How do antidepressants affect the brain? Apply your new knowledge.`,
-    xp: 1200,
+    percent: 0,
   },
   // {
   //   title: "Chemistry I",

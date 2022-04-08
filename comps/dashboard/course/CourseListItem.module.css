@@ -1,0 +1,27 @@
+.con {
+  display: flex;
+  margin-bottom: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 0.33rem;
+  border: 1px solid var(--dark-33);
+  background-color: rgba(255, 255, 255, 0.33);
+  backdrop-filter: blur(0.42rem);
+  cursor: pointer;
+}
+
+.img_con {
+  flex: 1;
+  position: relative;
+  margin: 0.33rem;
+  border-radius: 0.33rem;
+  overflow: hidden;
+}
+
+.body {
+  flex: 5;
+  padding: 0.33rem;
+}
+
+.title {
+  margin-bottom: 0.42rem;
+}

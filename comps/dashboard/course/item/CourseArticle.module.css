@@ -1,4 +1,4 @@
-.course {
+.con {
   padding: 1rem 0.7rem;
   margin-bottom: 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -8,31 +8,28 @@
   background-color: rgba(255, 255, 255, 0.33);
   backdrop-filter: blur(0.42rem);
   cursor: pointer;
+  width: 100%;
 }
 
-.course_title {
-  font-size: 1.7rem;
-  margin-bottom: 1rem;
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
-
-.course_text {
-  font-size: 1.2rem;
-  line-height: 1.42;
+.header_title {
+  font-size: 1.3rem;
 }
 
 .divider {
-  height: 2px;
-  background: var(--dark-33);
   margin: 1.5rem auto;
+  height: 2px;
+  background-color: var(--dark-33);
 }
-
-.exp_link_con {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.title {
+  margin-bottom: 1rem;
+}
+.description {
+  font-size: 1.1rem;
+  line-height: 1.42;
   margin-bottom: 0.5rem;
-}
-
-.exp {
-  font-weight: 600;
 }
