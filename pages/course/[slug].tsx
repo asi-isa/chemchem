@@ -1,8 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { IoChevronForwardSharp, IoTimeSharp } from "react-icons/io5";
 
 import styles from "../../styles/CourseList.module.css";
 import entslugify from "../../utils/str/entslugify";
@@ -12,6 +10,9 @@ import CourseVideoItem from "../../comps/dashboard/course/CourseVideoItem";
 import CourseArticle from "../../comps/dashboard/course/item/CourseArticle";
 import CourseQuiz from "../../comps/dashboard/course/item/CourseQuiz";
 import CourseTest from "../../comps/dashboard/course/item/CourseTest";
+import { IoBarChartOutline } from "react-icons/io5";
+import ItemDivider from "../../comps/divider/ItemDivider";
+import CourseQuickStats from "../../comps/dashboard/course/item/CourseQuickStats";
 
 const COURSE_ITEM_DATA = ["just", "some", "dummy", "data"];
 
@@ -32,14 +33,12 @@ export default function CourseList() {
         />
       </h1>
 
-      {/* <CourseFilter /> */}
-
-      <div className={styles.start_continue_cta}>Start</div>
-
       <div className={styles.course_items}>
+        <CourseQuickStats />
         {/* {COURSE_ITEM_DATA.map((course, index) => {
           return <CourseListItem />;
         })} */}
+        <CourseFilter />
 
         <CourseVideoItem />
 

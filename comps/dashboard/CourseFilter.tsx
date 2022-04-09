@@ -17,7 +17,7 @@ export default function CourseFilter() {
           Completed
         </p>
       </div>
-
+      {/* 
       <div className={styles.filter_second_row_con}>
         <div className={styles.filter_item} style={{ opacity: 1 }}>
           <IoLeafOutline size={18} />
@@ -39,7 +39,7 @@ export default function CourseFilter() {
 
           <p className={styles.filter_second_row_text}>Math</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

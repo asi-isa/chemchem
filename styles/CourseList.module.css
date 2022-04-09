@@ -14,28 +14,8 @@
   background: var(--dark);
 }
 
-.start_continue_cta {
-  border: 1px solid var(--dark);
-  width: fit-content;
-  padding: 1rem 2rem;
-  border-radius: 0.33rem;
-  margin: 0 auto;
-  margin-bottom: 5vh;
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: 600;
-  transition: background-color 0.42s, box-shadow 0.42s;
-}
-.start_continue_cta:hover,
-.start_continue_cta:focus,
-.start_continue_cta:active {
-  background-color: var(--dark);
-  color: var(--cream);
-  box-shadow: var(--dark) 0px 5px 15px;
-}
-
 .course_items {
-  padding: 0 2rem;
+  padding: 0 0.5rem;
   display: flex;
   flex-wrap: wrap;
 }

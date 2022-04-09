@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { IoNewspaperOutline } from "react-icons/io5";
 
 import styles from "./CourseArticle.module.css";
