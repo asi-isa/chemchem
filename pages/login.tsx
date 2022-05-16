@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { IoChevronBack } from "react-icons/io5";
 import {
   AiOutlineGoogle,
@@ -11,6 +12,8 @@ import {
 import styles from "../styles/Login.module.css";
 
 export default function Login() {
+  const router = useRouter();
+
   return (
     <div className={styles.con}>
       <div className={styles.inner_con_con}>
@@ -43,7 +46,13 @@ export default function Login() {
             <p className={styles.text}>
               Use your Email &amp; Password to log in
             </p>
-            <form className={styles.form} onSubmit={(e) => e.preventDefault()}>
+            <form
+              className={styles.form}
+              onSubmit={(e) => {
+                e.preventDefault();
+                router.push("/dashboard");
+              }}
+            >
               <input
                 className={styles.input}
                 type="email"
