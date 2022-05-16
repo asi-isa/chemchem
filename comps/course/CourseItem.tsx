@@ -24,8 +24,8 @@ export default function CourseItem({
   return (
     <motion.div
       initial={{ x: -50, opacity: 0 }}
-      animate={{ x: 0, opacity: 0.999 }}
-      transition={{ duration: 1, delay: index * 0.1, ease: "easeOut" }}
+      whileInView={{ x: 0, opacity: 0.999 }}
+      transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
       className={styles.course}
       onClick={() => router.push(`/course/${slugify(title)}`)}
     >
