@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { IoChevronForwardSharp, IoTimeSharp } from "react-icons/io5";
 
 import styles from "./CourseVideoItem.module.css";
-import ItemDivider from "../../divider/ItemDivider";
+import ItemDivider from "../divider/ItemDivider";
 
 export default function CourseVideoItem() {
   return (

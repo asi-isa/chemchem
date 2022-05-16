@@ -2,7 +2,7 @@ import React from "react";
 import { BsFlag } from "react-icons/bs";
 
 import styles from "./CourseTest.module.css";
-import ItemDivider from "../../../divider/ItemDivider";
+import ItemDivider from "../../divider/ItemDivider";
 
 export default function CourseTest() {
   return (

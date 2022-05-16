@@ -2,7 +2,7 @@ import React from "react";
 import { BsQuestionSquare } from "react-icons/bs";
 
 import styles from "./CourseQuiz.module.css";
-import ItemDivider from "../../../divider/ItemDivider";
+import ItemDivider from "../../divider/ItemDivider";
 import QuizItem from "./QuizItem";
 
 export default function CourseQuiz() {

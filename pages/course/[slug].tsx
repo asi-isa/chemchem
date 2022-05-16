@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 
 import styles from "../../styles/CourseList.module.css";
 import entslugify from "../../utils/str/entslugify";
-import CourseListItem from "../../comps/dashboard/course/CourseListItem";
+import CourseListItem from "../../comps/course/CourseListItem";
 import CourseFilter from "../../comps/dashboard/CourseFilter";
-import CourseVideoItem from "../../comps/dashboard/course/CourseVideoItem";
-import CourseArticle from "../../comps/dashboard/course/item/CourseArticle";
-import CourseQuiz from "../../comps/dashboard/course/item/CourseQuiz";
-import CourseTest from "../../comps/dashboard/course/item/CourseTest";
+import CourseVideoItem from "../../comps/course/CourseVideoItem";
+import CourseArticle from "../../comps/course/item/CourseArticle";
+import CourseQuiz from "../../comps/course/item/CourseQuiz";
+import CourseTest from "../../comps/course/item/CourseTest";
 import { IoBarChartOutline } from "react-icons/io5";
 import ItemDivider from "../../comps/divider/ItemDivider";
-import CourseQuickStats from "../../comps/dashboard/course/item/CourseQuickStats";
+import CourseQuickStats from "../../comps/course/item/CourseQuickStats";
 
 const COURSE_ITEM_DATA = ["just", "some", "dummy", "data"];
 

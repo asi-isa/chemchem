@@ -2,7 +2,7 @@ import React from "react";
 import { IoNewspaperOutline } from "react-icons/io5";
 
 import styles from "./CourseArticle.module.css";
-import ItemDivider from "../../../divider/ItemDivider";
+import ItemDivider from "../../divider/ItemDivider";
 
 export default function CourseArticle() {
   return (

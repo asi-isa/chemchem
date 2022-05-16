@@ -2,7 +2,7 @@ import React from "react";
 import { IoBarChartOutline } from "react-icons/io5";
 
 import styles from "./CourseQuickStats.module.css";
-import ItemDivider from "../../../divider/ItemDivider";
+import ItemDivider from "../../divider/ItemDivider";
 
 export default function CourseQuickStats() {
   return (

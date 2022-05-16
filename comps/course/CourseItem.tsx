@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { IoChevronForward } from "react-icons/io5";
 
 import styles from "./CourseItem.module.css";
-import slugify from "../../../utils/str/slugify";
+import slugify from "../../utils/str/slugify";
 
 interface CourseItemProps {
   title: string;
@@ -33,12 +33,7 @@ export default function CourseItem({
 
       <p className={styles.course_text}>{text}</p>
 
-      <motion.div
-        initial={{ width: "0%" }}
-        whileInView={{ width: "100%" }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        className={styles.divider}
-      />
+      <div className={styles.divider} />
 
       <div className={styles.exp_link_con}>
         <p className={styles.exp}>{percent}%</p>

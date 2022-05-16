@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import styles from "./Courses.module.css";
 import CourseFilter from "./CourseFilter";
-import CourseItem from "./course/CourseItem";
+import CourseItem from "../course/CourseItem";
 
 const COURSE_DATA = [
   {
